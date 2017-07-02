@@ -85,7 +85,7 @@ public class AdapterPosters extends RecyclerView.Adapter
             }
             if (itens.get(position).getPoster_path() != null) {
                 try {
-                    String str = "http://image.tmdb.org/t/p/" + Aplicacao.getConfigsApplication().getImages().getPoster_sizes().get(1) + itens.get(position).getPoster_path();
+                    String str = "http://image.tmdb.org/t/p/" + Aplicacao.getConfigsApplication().getImages().getPoster_sizes().get(2) + itens.get(position).getPoster_path();
                     Glide.with(context)
                             .load(str)
                             .placeholder(android.R.drawable.progress_horizontal)
