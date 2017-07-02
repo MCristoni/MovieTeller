@@ -10,7 +10,7 @@ import com.example.mathe.movieteller.R;
 import com.example.mathe.movieteller.activities.DetalhesFilmeActivity;
 import com.example.mathe.movieteller.utils.Aplicacao;
 
-public class ViewHolderPosters extends RecyclerView.ViewHolder  implements View.OnClickListener{
+class ViewHolderPosters extends RecyclerView.ViewHolder  implements View.OnClickListener{
 
     final TextView txtImgIndisp;
     final TextView txtResumo;
@@ -18,7 +18,7 @@ public class ViewHolderPosters extends RecyclerView.ViewHolder  implements View.
     final TextView txtTitulo;
     final ImageView imgPoster;
 
-    public ViewHolderPosters(View view)
+    ViewHolderPosters(View view)
     {
         super(view);
         txtImgIndisp = (TextView) view.findViewById(R.id.txtImgIndisp);

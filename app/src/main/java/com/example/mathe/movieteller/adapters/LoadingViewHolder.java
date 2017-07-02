@@ -6,10 +6,10 @@ import android.widget.ProgressBar;
 
 import com.example.mathe.movieteller.R;
 
-public class LoadingViewHolder extends RecyclerView.ViewHolder {
-    public ProgressBar progressBar;
+class LoadingViewHolder extends RecyclerView.ViewHolder {
+    ProgressBar progressBar;
 
-    public LoadingViewHolder(View view) {
+    LoadingViewHolder(View view) {
         super(view);
         progressBar = (ProgressBar) view.findViewById(R.id.progress);
     }

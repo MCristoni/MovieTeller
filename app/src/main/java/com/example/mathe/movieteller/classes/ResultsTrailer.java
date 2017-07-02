@@ -14,7 +14,7 @@ public class ResultsTrailer implements Parcelable {
     private String site;
     private String type;
 
-    protected ResultsTrailer(Parcel in) {
+    private ResultsTrailer(Parcel in) {
         id = in.readString();
         iso_639_1 = in.readString();
         iso_3166_1 = in.readString();

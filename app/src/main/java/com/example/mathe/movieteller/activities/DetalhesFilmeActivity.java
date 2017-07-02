@@ -10,11 +10,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -41,7 +39,6 @@ import livroandroid.lib.utils.HttpHelper;
 public class DetalhesFilmeActivity extends BaseActivity {
 
     private boolean carregados = false;
-    private DetalhesFilmes detalhes;
     private String idFilme;
     private ImageView imgBackdrop;
     private TextView txtTagline;
@@ -107,7 +104,6 @@ public class DetalhesFilmeActivity extends BaseActivity {
             public void run() {
                 Point point = new Point();
                 getWindowManager().getDefaultDisplay().getSize(point);
-                DisplayMetrics dm = getApplicationContext().getResources().getDisplayMetrics();
                 tamX = point.x;
                 tamY = (int)(tamX/1.7751479289940828402366863905325);//Proporção entre largura e altura das imagens baixadas
             }
@@ -218,7 +214,7 @@ public class DetalhesFilmeActivity extends BaseActivity {
             videos.add(new Videos("Others", others));
 
         ButterKnife.bind(this);
-        RecyclerAdapter adapter = new RecyclerAdapter(this, videos);
+        RecyclerAdapter adapter = new RecyclerAdapter(videos);
         recyclerview.setLayoutManager(new LinearLayoutManager(this));
         recyclerview.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         recyclerview.setAdapter(adapter);

@@ -1,6 +1,5 @@
 package com.example.mathe.movieteller.adapters;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,10 +14,8 @@ import java.util.List;
 
 public class RecyclerAdapter extends ExpandableRecyclerViewAdapter<TitleViewHolder, SubItemViewHolder> {
 
-    private Context context;
-    public RecyclerAdapter(Context context, List<? extends ExpandableGroup> groups) {
+    public RecyclerAdapter(List<? extends ExpandableGroup> groups) {
         super(groups);
-        this.context = context;
     }
 
     @Override

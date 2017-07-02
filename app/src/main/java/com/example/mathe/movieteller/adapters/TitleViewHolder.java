@@ -11,7 +11,7 @@ import com.example.mathe.movieteller.classes.Videos;
 import com.thoughtbot.expandablerecyclerview.models.ExpandableGroup;
 import com.thoughtbot.expandablerecyclerview.viewholders.GroupViewHolder;
 
-public class TitleViewHolder extends GroupViewHolder {
+class TitleViewHolder extends GroupViewHolder {
 
     private TextView titleName;
     private ImageView arrow;
