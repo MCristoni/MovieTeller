@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movie Teller</string>
+    <string name="ordenar">Sort</string>
+    <string name="mais_populares">Most popular</string>
+    <string name="cancelar">Cancel</string>
+    <string name="menos_populares">Least popular</string>
+    <string name="piores_avalia_es">Lowest average ratings</string>
+    <string name="melhores_avalia_es">Highest average ratings</string>
+    <string name="sinopse_indisponivel">No overview found</string>
+    <string name="carregando">Loading</string>
+    <string name="favor_aguardar">Please wait!</string>
+    <string name="mediaAvaliacoes">Vote average: %s</string>
+    <string name="avaliacoes">%s/10</string>
+    <string name="sair">Pressione back again to exit</string>
+    <string name="internet">No Internet connection</string>
+    <string name="title_activity_detalhes_filme">DetalhesFilmeActivity</string>
+    <string name="ok">Ok</string>
+    <string name="backdrop">Backdrop</string>
+</resources>

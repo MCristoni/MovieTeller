@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/primary</item>
+    </style>
+
+    <!-- Tema base. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Cor primária do aplicativo -->
+        <item name="colorPrimary">@color/primary</item>
+        <!-- Variação escura da cor primária para a status bar e contextual app bars -->
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <!-- Cor de acentuação para as views (checkbox, textfield etc.) -->
+        <item name="colorAccent">@color/accent</item>
+        <!-- Cor para o efeito ripple -->
+        <item name="colorControlHighlight">@color/cinzaClaroBckgd</item>
+    </style>
+
+    <!-- Tema base + NoActionBar -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CoresItensToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Mudar a cor dos icones -->
+        <item name="colorControlNormal">@android:color/white</item>
+
+        <!-- Mudar cor título -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+        <!-- Mudar cor texto -->
+        <item name="android:textColor">@android:color/black</item>
+
+        <item name="android:colorControlNormal" tools:ignore="NewApi">?colorControlNormal</item>
+
+        <!--Colocar efeito de elevado na Toolbar-->
+        <item name="android:elevation" tools:ignore="NewApi">4dp</item>
+
+        <!--Setar título-->
+        <item name="android:title">@string/app_name</item>
+
+        <!--Instaciar estilo de menu da Toolbar-->
+        <item name="actionOverflowMenuStyle">@style/ToolbarMenuStyle</item>
+    </style>
+
+    <!-- Setar DropDown de menu para ficar abaixo da Toolbar -->
+    <style name="ToolbarMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:dropDownVerticalOffset">4.0dip</item>
+    </style>
+
+    <style name="dialog_theme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
