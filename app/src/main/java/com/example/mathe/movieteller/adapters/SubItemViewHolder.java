@@ -43,11 +43,11 @@ class SubItemViewHolder extends ChildViewHolder {
     {
         imgVideo.setImageResource(icon);
     }
-    public void setYoutube(boolean youtube) {
+    void setYoutube(boolean youtube) {
         this.youtube = youtube;
     }
 
-    public void setVideoKey(String videoKey) {
+    void setVideoKey(String videoKey) {
         this.videoKey = videoKey;
     }
 }
